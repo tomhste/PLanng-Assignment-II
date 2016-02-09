@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    Counter counter;
+    Classone classone;
     while(true)
     {
         string cmd;
@@ -14,12 +14,13 @@ int main()
         {
             string word;
             cin >> word;
-            counter.incr(word);
+            classone.incr(word);
         }
         if(cmd == "print")
         {
-            counter.get_by_freq();
+            classone.get_by_freq();
         }
+
     }
     return 0;
 }

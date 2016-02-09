@@ -3,7 +3,7 @@
 #include <algorithm>
 
 using namespace std;
-
+//Struct
 struct OurDataType
 {
 public:
@@ -42,7 +42,9 @@ bool operator < (OurDataType a, OurDataType b)
     }
 }
 
-class Counter
+
+
+class Classone
 {
 private:
     vector<OurDataType> words;
