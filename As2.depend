@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1455034792 source:c:\program files (x86)\forritunarmal\codeblocksave\as2\planng-assignment-ii\main.cpp
+	<iostream>
+	"main.h"
+
+1455034792 c:\program files (x86)\forritunarmal\codeblocksave\as2\planng-assignment-ii\main.h
+	<iostream>
+	<vector>
+	<algorithm>
+
