@@ -1,10 +1,26 @@
 # depslib dependency file v1.0
-1455034792 source:c:\program files (x86)\forritunarmal\codeblocksave\as2\planng-assignment-ii\main.cpp
+1455111550 source:c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\compiler.cpp
 	<iostream>
 	"main.h"
+	"Lexer.h"
+	"Parser.h"
 
-1455034792 c:\program files (x86)\forritunarmal\codeblocksave\as2\planng-assignment-ii\main.h
+1455042290 c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\main.h
 	<iostream>
 	<vector>
 	<algorithm>
+
+1455111595 c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\include\lexer.h
+	"Token.h"
+
+1455111648 c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\include\parser.h
+	"Token.h"
+	"Lexer.h"
+
+1455111556 c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\include\token.h
+	"Token.h"
+	<string>
+
+1455111596 source:c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\src\lexer.cpp
+	"Lexer.h"
 
