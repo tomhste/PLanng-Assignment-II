@@ -11,9 +11,14 @@ class Lexer
         // Looks for patterns that match one of the tokens from TokenCode
         // See assignment for details
 
-        TokenCode nextToken();
+        Token nextToken(string input);
         // The lexical analyzer (this class) returns a token with TokenCode = ERROR
         // if some illegal lexeme is found.
+
+        // Checks if input is of TokenCode type ID
+        bool isLegalID(string input);
+        // Checks if input is of TokenCode type INT
+        bool isLegalINT(string input);
 };
 
 #endif // LEXER_H

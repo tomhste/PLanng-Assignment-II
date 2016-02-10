@@ -9,22 +9,24 @@
 	<vector>
 	<algorithm>
 
-1455111595 c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\include\lexer.h
+1455141664 c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\include\lexer.h
 	"Token.h"
 
-1455116181 c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\include\parser.h
+1455129334 c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\include\parser.h
 	"Token.h"
 	"Lexer.h"
 
-1455111556 c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\include\token.h
+1455133523 c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\include\token.h
 	"Token.h"
 	<string>
 
-1455116267 source:c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\src\lexer.cpp
+1455142657 source:c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\src\lexer.cpp
 	"Lexer.h"
 	<iostream>
 
-1455116569 source:c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\src\parser.cpp
+1455142781 source:c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\src\parser.cpp
 	"Parser.h"
 	<iostream>
+	<sstream>
+	<vector>
 

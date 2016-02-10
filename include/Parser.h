@@ -10,9 +10,6 @@ class Parser
     public:
         Parser(Lexer &myLexer);
         void parse();
-
-    protected:
-
     private:
         Lexer lexer;
         Token currentToken;
