@@ -8,7 +8,7 @@
 class Parser
 {
     public:
-        Parser(Lexer myLexer);
+        Parser(Lexer &myLexer);
         void parse();
 
     protected:
