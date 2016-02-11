@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1455116313 source:c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\compiler.cpp
+1455225885 source:c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\compiler.cpp
 	<iostream>
 	"Lexer.h"
 	"Parser.h"
@@ -9,12 +9,12 @@
 	<vector>
 	<algorithm>
 
-1455208404 c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\include\lexer.h
+1455224810 c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\include\lexer.h
 	"Token.h"
 	<sstream>
 	<string>
 
-1455206536 c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\include\parser.h
+1455209686 c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\include\parser.h
 	"Token.h"
 	"Lexer.h"
 	<vector>
@@ -23,12 +23,15 @@
 	"Token.h"
 	<string>
 
-1455208440 source:c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\src\lexer.cpp
+1455227146 source:c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\src\lexer.cpp
 	"Lexer.h"
 	<iostream>
+	<stdlib.h>
+	<stdio.h>
 
-1455208073 source:c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\src\parser.cpp
+1455226565 source:c:\users\andrirafn\desktop\forritunarmal\planng-assignment-ii\src\parser.cpp
 	"Parser.h"
 	<iostream>
 	<vector>
+	<stdlib.h>
 
