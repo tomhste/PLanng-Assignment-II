@@ -11,7 +11,7 @@ void Parser::parse(){
 
     // Various test input, will be replaced by stdin.
     string test1 = "number = 3";
-    string test2 = "var = 2 * 3";
+    string test2 = "var = 2 * 3 ( ) ( ) ( ) ( ) 3 + 65";
 
     // We simulate stdin by placing the test strings into a stringstream, replaced later by stdin.
     stringstream ss(test2);
@@ -25,14 +25,45 @@ void Parser::parse(){
     // Input is split up by whitespace and parsed into Tokens.
     string key;
     while(ss >> key){
-        pattern.push_back(lexer.nextToken(key));
+        keyVector.push_back(key);
     }
 
-    // Debug printout!
-    for(size_t i = 0; i < pattern.size(); i++){
-        cout << "Token #" << i << endl;
-        cout << "Lexeme: " << pattern[i].lexeme << endl;
-        cout << "Token id: " << pattern[i].tCode << endl;
-        cout << endl;
-    }
+    parseStatements();
+}
+
+/// Non terminals: Statements (starting symbol), Statement, Expr, Term and Factor
+///     terminals: ;, end, id, print, +, -, *, int, (, )
+
+///      parseStatements(); << calls: parseStatement() | ends
+bool Parser::parseStatements(){
+
+    return false;
+}
+
+///      parseStatement();  << calls: parseExpr() | print id
+bool Parser::parseStatement(){
+
+    return false;
+}
+
+///      parseExpr();       << calls: parseTerm() | parseTerm() + parseExpr() | parseTerm() - ParseExpr
+bool Parser::parseExpr(){
+
+    return false;
+}
+
+///      parseTerm();       << calls: parseFactor() | parseFactor() * parseTerm()
+bool Parser::parseTerm(){
+
+    return false;
+}
+
+///      parseFactor();     << calls: int | id | ( parseExpr() )
+bool Parser::parseFactor(){
+
+    return false;
+}
+
+void Parser::syntaxError(){
+    cout << "Syntax Error" << endl;
 }
