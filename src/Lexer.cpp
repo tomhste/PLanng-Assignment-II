@@ -2,11 +2,11 @@
 #include <iostream>
 
 Lexer::Lexer(){
-
 }
 
-Token Lexer::nextToken(string key){
-
+Token Lexer::nextToken(){
+    string key;
+    cin >> key;
     TokenCode inputToken;
     if(key == "=")
         inputToken = ASSIGN;

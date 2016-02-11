@@ -1,6 +1,8 @@
 #ifndef LEXER_H
 #define LEXER_H
 #include "Token.h"
+#include <sstream>
+#include <string>
 using namespace std;
 
 class Lexer
@@ -11,7 +13,7 @@ class Lexer
         // Looks for patterns that match one of the tokens from TokenCode
         // See assignment for details
 
-        Token nextToken(string input);
+        Token nextToken();
         // The lexical analyzer (this class) returns a token with TokenCode = ERROR
         // if some illegal lexeme is found.
 

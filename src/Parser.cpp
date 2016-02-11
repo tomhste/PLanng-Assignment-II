@@ -1,6 +1,5 @@
 #include "Parser.h"
 #include <iostream>
-#include <sstream>
 #include <vector>
 
 Parser::Parser(Lexer &myLexer){
@@ -8,26 +7,7 @@ Parser::Parser(Lexer &myLexer){
 }
 
 void Parser::parse(){
-
-    // Various test input, will be replaced by stdin.
-    string test1 = "number = 3";
-    string test2 = "var = 2 * 3 ( ) ( ) ( ) ( ) 3 + 65";
-
-    // We simulate stdin by placing the test strings into a stringstream, replaced later by stdin.
-    stringstream ss(test2);
-
-    // A pattern is a description of the form that the lexemes of a token may take.
-    // In the case of a keyword as a token, the pattern is just the sequence of
-    // characters that form the keyword. For identifiers and some other tokens,
-    // the pattern is more complex structure that is matched by many strings.
-    vector<Token> pattern;
-
-    // Input is split up by whitespace and parsed into Tokens.
-    string key;
-    while(ss >> key){
-        keyVector.push_back(key);
-    }
-
+    currentToken = lexer.nextToken();
     parseStatements();
 }
 
@@ -36,7 +16,8 @@ void Parser::parse(){
 
 ///      parseStatements(); << calls: parseStatement() | ends
 bool Parser::parseStatements(){
-
+    if(currentToken.tCode!= END)
+        parseStatement();
     return false;
 }
 
